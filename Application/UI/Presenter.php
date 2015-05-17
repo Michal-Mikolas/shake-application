@@ -9,6 +9,7 @@ use \Nette;
 /**
  * Application\UI\Presenter
  *
+ * @package Shake
  * @author  Michal Mikoláš <nanuqcz@gmail.com>
  */
 class Presenter extends Nette\Application\UI\Presenter
