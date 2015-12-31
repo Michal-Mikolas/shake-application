@@ -36,13 +36,13 @@ class Presenter extends Nette\Application\UI\Presenter
 		} catch (\Nette\MemberAccessException $e) {
 			// Repository
 			if (strrpos($name, 'Repository') == (strlen($name) - 10)) {
-				$repository = $this->context->$name;
+				$repository = $this->context->getService($name);
 				return $repository;
 			}
 			
 			// Service
 			if (strrpos($name, 'Service') == (strlen($name) - 7)) {
-				$service = $this->context->$name;
+				$service = $this->context->getService($name);
 				return $service;
 			}
 
