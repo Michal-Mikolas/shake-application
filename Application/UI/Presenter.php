@@ -1,9 +1,7 @@
 <?php
 namespace Shake\Application\UI;
 
-use \Shake\Utils\Strings,
-	\Shake\VisualPaginator;
-use \Nette;
+use Nette;
 
 
 /**
