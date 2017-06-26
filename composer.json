@@ -16,7 +16,7 @@
 	},
 	"require": {
 		"php": ">=5.4.0",
-		"nette/application": ">=2.2.0",
+		"nette/application": "2.4.*",
 
 		"shake/shake": "dev-master",
 		"shake/utils": "dev-master"
