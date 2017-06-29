@@ -1,9 +1,9 @@
 <?php
 namespace Shake\Application\UI;
 
-use \Shake\Utils\Strings,
-	\Shake\VisualPaginator;
-use \Nette;
+use Shake\Utils\Strings,
+	Shake\VisualPaginator;
+use Nette;
 
 
 /**
@@ -17,9 +17,9 @@ class Presenter extends Nette\Application\UI\Presenter
 	protected function paginate($data, $service)
 	{
 		return $service->applyLimit(
-			$data, 
-			$this['paginator']->paginator->itemsPerPage, 
-			$this['paginator']->paginator->offset
+			$data,
+			$this['paginator']->getPaginator()->itemsPerPage,
+			$this['paginator']->getPaginator()->offset
 		);
 	}
 
@@ -38,7 +38,7 @@ class Presenter extends Nette\Application\UI\Presenter
 				$repository = $this->context->$name;
 				return $repository;
 			}
-			
+
 			// Service
 			if (strrpos($name, 'Service') == (strlen($name) - 7)) {
 				$service = $this->context->$name;
