@@ -39,8 +39,8 @@ class Presenter extends Nette\Application\UI\Presenter
 				return $repository;
 			}
 
-			// Service
-			if (strrpos($name, 'Service') == (strlen($name) - 7)) {
+			// Manager
+			if (strrpos($name, 'Manager') == (strlen($name) - 7)) {
 				$service = $this->context->$name;
 				return $service;
 			}
