@@ -15,10 +15,10 @@
 		"classmap": [""]
 	},
 	"require": {
-		"php": ">=5.4.0",
-		"nette/application": "2.4.*",
+		"php": ">=7.1.0",
+		"nette/application": "3.0.*",
 
-		"shake/shake": "2.4.*",
-		"shake/utils": "2.4.*"
+		"shake/shake": "3.0.*",
+		"shake/utils": "3.0.*"
 	}
 }
