@@ -15,10 +15,9 @@
 		"classmap": [""]
 	},
 	"require": {
-		"php": ">=7.1.0",
-		"nette/application": "3.0.*",
+		"nette/application": ">=3.2.5",
 
-		"shake/shake": "3.0.*",
-		"shake/utils": "3.0.*"
+		"shake/shake": "4.0.*",
+		"shake/utils": "4.0.*"
 	}
 }
